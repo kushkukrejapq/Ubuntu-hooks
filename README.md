@@ -78,16 +78,16 @@ pip install inotify-simple
 Press **Ctrl+C** to stop monitoring.  
 The script will automatically clean up inotify resources to prevent resource leaks.
 
-## **Output Format**
+### **Output Format**
 
-### Console Output (Non-Verbose)
+## Console Output (Non-Verbose)
 ```bash
 2025-08-26T21:45:12.345678 - CREATE - /var/log/syslog
 2025-08-26T21:45:13.123456 - MODIFY - /var/log/nginx/access.log
 ```
 
 
-### Console Output (Verbose)
+## Console Output (Verbose)
 ```json
 LOG EVENT: {
   "timestamp": "2025-08-26T21:45:12.345678",
