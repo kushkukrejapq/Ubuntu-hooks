@@ -71,11 +71,12 @@ pip install inotify-simple
 6. (Optional) Use `sudo` if monitoring directories that require elevated permissions, such as `/var/log`:
    ```bash
    sudo python3 log_monitor.py --monitor --dirs /var/log
-```
+  ```
 
-## **Stopping the Monitor**
+## **Stopping the Monitor** 
 
-Press **Ctrl+C** to stop monitoring. The script will automatically clean up inotify resources to prevent resource leaks.
+Press **Ctrl+C** to stop monitoring.  
+The script will automatically clean up inotify resources to prevent resource leaks.
 
 ## **Output Format**
 
@@ -150,7 +151,8 @@ Events are appended to the specified file (e.g., `events.json`):
   Ensure the monitored directories exist and contain activity:
   ```bash
   echo "Test" >> /tmp/logs/test.log
-```
+  ```
+---
 
 ## **Limitations**
 
@@ -177,8 +179,3 @@ Events are appended to the specified file (e.g., `events.json`):
 - **Output File Permissions**: Ensure the output file (e.g., `events.json`) has restricted permissions (e.g., `0600`).  
 - **Path Validation**: Avoid monitoring untrusted directories to prevent path traversal issues.  
 
----
-
-## **License**
-
-This project is licensed under the MIT License. See the LICENSE file for details.
