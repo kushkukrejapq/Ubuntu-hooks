@@ -55,19 +55,19 @@ pip install inotify-simple
 2. (Optional) Make the script executable:
    ```bash
    chmod +x log_monitor.py
-```
+  ```
 3. Ensure the required dependency is installed:
    ```bash
    pip install inotify-simple
-```
+  ```
 4. Verify the installation of the dependency:
    ```bash
    pip show inotify-simple
-```
+  ```
 5. Run the script using Python:
    ```bash
    python3 log_monitor.py [options]
-```
+  ```
 6. (Optional) Use `sudo` if monitoring directories that require elevated permissions, such as `/var/log`:
    ```bash
    sudo python3 log_monitor.py --monitor --dirs /var/log
@@ -125,7 +125,7 @@ Events are appended to the specified file (e.g., `events.json`):
   If you see "Permission denied" errors, try running with `sudo`:
   ```bash
   sudo ./log_monitor.py --monitor --dirs /var/log
-```
+  ```
 
 - **Inotify Watch Limits**  
   If monitoring fails for many directories, check the inotify watch limit:
@@ -135,17 +135,17 @@ Events are appended to the specified file (e.g., `events.json`):
   Increase it if needed:
   ```bash
   sudo sysctl -w fs.inotify.max_user_watches=524288
-```
+  ```
 - **Missing inotify-simple**  
   Verify installation:
   ```bash
   pip show inotify-simple
-```
+  ```
 
 - **Install if missing**  
   ```bash
   pip install inotify-simple
-```
+  ```
 
 - **No Events**
   Ensure the monitored directories exist and contain activity:
