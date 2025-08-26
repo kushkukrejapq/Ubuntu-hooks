@@ -55,23 +55,23 @@ pip install inotify-simple
 2. (Optional) Make the script executable:
    ```bash
    chmod +x log_monitor.py
-  ```
+   ```
 3. Ensure the required dependency is installed:
    ```bash
    pip install inotify-simple
-  ```
+   ```
 4. Verify the installation of the dependency:
    ```bash
    pip show inotify-simple
-  ```
+    ```
 5. Run the script using Python:
    ```bash
    python3 log_monitor.py [options]
-  ```
+   ```
 6. (Optional) Use `sudo` if monitoring directories that require elevated permissions, such as `/var/log`:
    ```bash
    sudo python3 log_monitor.py --monitor --dirs /var/log
-  ```
+   ```
 
 ## **Stopping the Monitor** 
 
